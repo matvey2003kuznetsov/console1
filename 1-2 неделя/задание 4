@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  // (x + 1)^2 + 3(x + 1) при а) x = 1.7; б) x = 3. Ответ: а) 15.39 б) 28
+
+      float x = 1.7;
+      float otv = (x + 1) * (x + 1) + 3 * (x + 1);
+    cout << otv;
+
+    return 0;
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  // (x + 1)^2 + 3(x + 1) при а) x = 1.7; б) x = 3. Ответ: а) 15.39 б) 28
+
+      int x = 3;
+      int otv = (x + 1) * (x + 1) + 3 * (x + 1);
+    cout << otv;
+
+    return 0;
+}
