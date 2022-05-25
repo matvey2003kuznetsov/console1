@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b;
+    float x;
+    cout << " chislo 1: ";
+    cin >> a;
+    cout << " chislo 2: ";
+    cin >> b;
+
+    if (a / b == 0) {
+        cout << "Net";
+
+    }
+    else {
+        cout << " Da";
+        float x = (a / b) % 10;
+        if ((a / b) % 10) {
+            cout << "Ostatok" << x << endl;
+        }
+    }
+
+    return 0;
+}
