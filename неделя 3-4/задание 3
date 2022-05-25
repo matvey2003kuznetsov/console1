@@ -1,0 +1,23 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    //y = 5x - 10, если x > 3
+    //y = 1, если x = 3
+    //y = 2 * | x | -5, если x < 3
+
+    float x;
+    std::cout << "Введите x: ";
+    std::cin >> x;
+    if (x > 3)
+        std::cout << "y = 5x - 10 " << std::endl 
+        << " y= " <<  5 * x - 10;
+    if (x == 3)
+        std::cout << " y = 1"; 
+    if (x < 3)
+        std::cout << "2 * | x | -5 " << std::endl
+        << " y= " <<  2 * abs(x) - 5;
+    return 0;
+}
