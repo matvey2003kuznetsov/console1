@@ -1,0 +1,19 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    float n, m, sh;
+
+    std::cout << "Введите диапозон(начальное и конечное значение): ";
+    std::cin >> n >> m;
+    std::cout << "Введите шаг: ";
+    std::cin >> sh;
+
+    while (n <= m) {
+        n += sh;
+        std::cout << n << std::endl;
+    }
+    return 0;
+}
