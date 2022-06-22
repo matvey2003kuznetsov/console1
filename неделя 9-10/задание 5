@@ -1,0 +1,20 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+float y(float x);
+
+int main()
+{
+    float X;
+    std::cin >> X;
+    std::cout << y(X);
+}
+float y(float x) {
+    if (x > 0)
+        return 1.5 * x + 5;
+    if (x == 0)
+        return -2;
+    if (x < 0)
+        return 2 * abs(x + 4) - 6;
+}
