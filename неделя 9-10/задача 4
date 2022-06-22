@@ -1,0 +1,27 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+
+
+void ShiftLeft3(float& A, float& B, float& C) {
+
+    float temp = C;
+    C = A;
+    A = B;
+    B = temp;
+}
+
+int main()
+{
+    float A1 = 2, B1 = 3, C1 = 4;
+    float A2 = 10, B2 = 15, C2 = 20;
+
+    ShiftLeft3(A1, B1, C1);
+    ShiftLeft3(A2, B2, C2);
+   
+    std::cout << A1 << ' ' << B1 << ' ' << C1 << std::endl
+        << A2 << ' ' << B2 << ' ' << C2 << std::endl;
+
+        return 0;
+}
